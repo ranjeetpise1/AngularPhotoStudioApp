@@ -1,0 +1,26 @@
+<mat-card class="contact-form">
+    <h2>Contact Us</h2>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="fill">
+            <mat-label>Name:</mat-label>
+            <input matInput formControlName="name" required >
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Contact</mat-label>
+            <input matInput formControlName="contact" required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Your Message</mat-label>
+            <input matInput formControlName="message" rows="5" required>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="contactForm.invalid">Submit</button>
+    </form>
+</mat-card>

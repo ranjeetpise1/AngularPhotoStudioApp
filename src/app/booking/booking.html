@@ -1,0 +1,43 @@
+<mat-card class="booking-form">
+    <h2>Book Now</h2>
+    <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="fill">
+            <mat-label>Name:</mat-label>
+            <input matInput formControlName="name" required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Contact</mat-label>
+            <input matInput formControlName="contact" required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Choose Occasion</mat-label>
+            <mat-select>
+                @for (occasion of occasions; track occasion){
+                    <mat-option [value]="occasion.value">{{occasion.viewValue}}</mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="date" [min]="minDate" required>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Your Message</mat-label>
+            <input matInput formControlName="message" rows="5" required>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="bookingForm.invalid">Submit</button>
+    </form>
+</mat-card>

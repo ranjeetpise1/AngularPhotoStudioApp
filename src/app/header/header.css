@@ -1,0 +1,21 @@
+.nav{
+    background-color: rgb(200, 206, 211);
+    text-decoration: none;
+}
+.spacer{
+    flex-direction: 1 1 auto;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color: rgb(94, 90, 98);
+}
+.iconMenu{
+    padding-bottom: 29px;
+}
