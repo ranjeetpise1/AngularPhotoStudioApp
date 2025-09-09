@@ -1,0 +1,9 @@
+.footer{
+    background-color: rgb(200, 206, 211);
+    text-decoration: none;
+}
+
+.lastLine{
+    display: flex;
+    justify-content: center;
+}

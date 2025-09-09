@@ -16,7 +16,7 @@ interface Occasion{
 
 @Component({
   selector: 'app-booking',
-  imports: [CommonModule,MatFormFieldModule,ReactiveFormsModule, MatSelectModule, MatInputModule, MatDatepickerModule, MatButtonModule, MatCardModule, MatNativeDateModule],
+  imports: [CommonModule, MatFormFieldModule,ReactiveFormsModule, MatSelectModule, MatInputModule, MatDatepickerModule, MatButtonModule, MatCardModule, MatNativeDateModule],
   templateUrl: './booking.html',
   styleUrl: './booking.css',
   providers:[provideNativeDateAdapter()],

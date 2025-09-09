@@ -1,0 +1,18 @@
+<mat-card class="admin-form">
+    <h2>Admin</h2>
+    <form [formGroup]="adminForm" (ngSubmit)="onSubmit()">
+        
+
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password" required>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="adminForm.invalid">Submit</button>
+    </form>
+</mat-card>  

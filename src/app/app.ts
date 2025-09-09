@@ -6,10 +6,12 @@ import { Footer } from './footer/footer';
 import { Shoots } from './shoots/shoots';
 import { Contact } from './contact/contact';
 import { Booking } from './booking/booking';
+import { Admin } from './admin/admin';
+import { Aboutus } from './aboutus/aboutus';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Home, Footer, Shoots, Contact, Booking],
+  imports: [RouterOutlet, Header, Home, Footer, Shoots, Contact, Booking,Admin, Aboutus],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,5 +1,5 @@
 .nav{
-    background-color: rgb(200, 206, 211);
+    background-color: rgb(255, 255, 255);
     text-decoration: none;
 }
 .spacer{
@@ -16,6 +16,7 @@ a{
     font-size: large;
     color: rgb(94, 90, 98);
 }
-.iconMenu{
-    padding-bottom: 29px;
+button, a{
+    pointer-events: auto !important;
+    z-index: 1000;
 }
